@@ -14,6 +14,7 @@ public class DemoAppController {
 	ProductsService productsService;
 	
 	@GetMapping("/getProducts")
+//	@ResponseStatus(code = HttpStatus.BAD_REQUEST, reason = "Some parameters are invalid")
 	public ProductsResponse getAllProducts() {
 		return productsService.getProducts();
 	}
