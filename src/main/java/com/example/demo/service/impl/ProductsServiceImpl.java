@@ -15,7 +15,7 @@ public class ProductsServiceImpl implements ProductsService {
 	ProductsRepository productsRepository;
 
 	@Override
-	@Cacheable(value="testCache")
+//	@Cacheable(value="testCache")
 	public ProductsResponse getProducts() {
 		ProductsResponse response = new ProductsResponse();
 		response.setProducts(productsRepository.findAll());
